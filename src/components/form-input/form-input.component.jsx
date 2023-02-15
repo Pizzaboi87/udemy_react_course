@@ -11,6 +11,6 @@ const FormInput = ({ label, ...otherProps }) => {
       )}
     </Group>
   );
-};
+}; 
 
 export default FormInput;
