@@ -11,6 +11,7 @@
   "dependencies": {
     "@stripe/react-stripe-js": "^1.16.5",
     "@stripe/stripe-js": "^1.47.0",
+    "dotenv": "^16.0.3",
     "firebase": "^9.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,6 +24,7 @@
     "redux-thunk": "^2.4.2",
     "reselect": "^4.1.7",
     "sass": "^1.58.0",
+    "stripe": "^11.12.0",
     "styled-components": "^5.3.6",
     "vite-plugin-svgr": "^2.4.0"
   },
