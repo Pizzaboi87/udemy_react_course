@@ -19,6 +19,10 @@ export const CART_INITIAL_STATE = {
                 ...state,
                 isCartOpen: payload,
             };
+        case CART_ACTION_TYPES.CLEAR_CART:
+            return {
+            ...CART_INITIAL_STATE,
+            };
         default:
             return state
     }
