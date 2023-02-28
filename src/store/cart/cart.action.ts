@@ -69,5 +69,6 @@ export type SetClearCart = ActionWithPayload<CART_ACTION_TYPES.CLEAR_CART, {}>
 export const setClearCart = withMatcher((): SetClearCart => 
     createAction(CART_ACTION_TYPES.CLEAR_CART, {}))
 
-export const clearCart = () =>
-    createAction(CART_ACTION_TYPES.CLEAR_CART);
+export const clearCart = () => {
+    return setClearCart()
+}
