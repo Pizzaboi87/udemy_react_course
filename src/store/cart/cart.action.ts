@@ -1,6 +1,6 @@
 import { CategoryItem } from '../categories/category.types'
 import { CART_ACTION_TYPES, CartItem } from './cart.types'
-import { createAction, withMatcher, ActionWithPayload } from '../../utils/reducer/reducer.utils'
+import { createAction, withMatcher, ActionWithPayload, Action } from '../../utils/reducer/reducer.utils'
 
 const addCartItem = (cartItems: CartItem[], productToAdd: CategoryItem): CartItem[] => {
     const existingCartItem = cartItems.find(
@@ -64,10 +64,10 @@ export const clearItemFromCart = (cartItems: CartItem[], cartItemToClear: CartIt
     return setCartItems(newCartItems)
 };
 
-export type SetClearCart = ActionWithPayload<CART_ACTION_TYPES.CLEAR_CART, {}>
+export type SetClearCart = Action<CART_ACTION_TYPES.CLEAR_CART>
 
 export const setClearCart = withMatcher((): SetClearCart => 
-    createAction(CART_ACTION_TYPES.CLEAR_CART, {}))
+    createAction(CART_ACTION_TYPES.CLEAR_CART))
 
 export const clearCart = () => {
     return setClearCart()
