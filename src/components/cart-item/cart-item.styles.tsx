@@ -7,7 +7,7 @@ export const CartItemContainer = styled.div`
   margin-bottom: 15px;
 
   @media (orientation: portrait) {
-    height: 150px;
+    height: auto;
   }
 
   img {
