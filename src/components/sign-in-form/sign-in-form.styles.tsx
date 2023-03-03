@@ -5,6 +5,10 @@ export const SignInContainer = styled.div`
   flex-direction: column;
   width: 380px;
 
+  @media (orientation: portrait) {
+    width: 100%;
+  }
+
   h2 {
     margin: 10px 0;
   }
@@ -13,4 +17,8 @@ export const SignInContainer = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (orientation: portrait) {
+    column-gap: 5px;
+  }
 `;

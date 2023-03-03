@@ -21,6 +21,10 @@ export const NavLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media (orientation: portrait) {
+    width: 75%;
+  }
 `;
 
 export const NavLink = styled(Link)`

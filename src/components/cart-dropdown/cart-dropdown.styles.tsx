@@ -18,6 +18,11 @@ export const CartDropdownContainer = styled.div`
   right: 40px;
   z-index: 5;
 
+  @media (orientation: portrait) {
+    width: 75%;
+    height: 45%;
+  }
+
   ${BaseButton},
   ${GoogleSignInButton},
   ${InvertedButton} {

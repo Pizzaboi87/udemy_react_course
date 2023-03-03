@@ -8,6 +8,10 @@ export const ProductCartContainer = styled.div`
   align-items: center;
   position: relative;
 
+  @media (orientation: portrait) {
+    margin-bottom: 30px;
+  }
+
   img {
     width: 100%;
     height: 95%;
@@ -21,6 +25,10 @@ export const ProductCartContainer = styled.div`
     position: absolute;
     top: 255px;
     display: none;
+
+    @media (orientation: portrait) {
+      display: block;
+    }
   }
 
   &:hover {

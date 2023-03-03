@@ -49,6 +49,10 @@ export const DirectoryItemContainer = styled.div`
   margin: 0 7.5px 15px;
   overflow: hidden;
 
+  @media (orientation: portrait) {
+    min-width: 75%;
+  }
+
   &:first-child {
     margin-right: 7.5px;
   }

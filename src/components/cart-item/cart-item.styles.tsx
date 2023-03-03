@@ -6,6 +6,10 @@ export const CartItemContainer = styled.div`
   height: 80px;
   margin-bottom: 15px;
 
+  @media (orientation: portrait) {
+    height: 150px;
+  }
+
   img {
     width: 30%;
   }
@@ -21,5 +25,9 @@ export const ItemDetails = styled.div`
 
   span {
     font-size: 16px;
+
+    @media (orientation: portrait) {
+      font-size: 20px;
+    }
   }
 `;

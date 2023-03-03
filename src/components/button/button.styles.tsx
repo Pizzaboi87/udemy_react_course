@@ -20,6 +20,10 @@ export const BaseButton = styled.button`
   justify-content: center;
   align-items: center;
 
+  @media (orientation: portrait) {
+    line-height: 1.2;
+  }
+
   &:hover {
     background-color: white;
     color: black;

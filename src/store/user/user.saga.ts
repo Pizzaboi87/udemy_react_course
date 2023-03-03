@@ -1,4 +1,4 @@
-import { takeLatest, put, all, call } from 'typed-redux-saga/macro'
+import { takeLatest, put, all, call } from 'typed-redux-saga'
 import { User } from 'firebase/auth'
 import { USER_ACTION_TYPES } from './user.types'
 import { 
@@ -12,7 +12,7 @@ import {
     SignUpStart,
     SignUpSuccess
 } from './user.action'
-import { 
+import {
     getCurrentUser, 
     createUserDocumentFromAuth, 
     signInWithGooglePopup, 

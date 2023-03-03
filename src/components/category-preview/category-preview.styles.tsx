@@ -17,4 +17,8 @@ export const Preview = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
+
+  @media (orientation: portrait) {
+    grid-template-columns: 1fr;
+  }
 `;
