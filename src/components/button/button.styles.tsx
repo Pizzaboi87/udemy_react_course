@@ -22,6 +22,7 @@ export const BaseButton = styled.button`
 
   @media (orientation: portrait) {
     line-height: 1.2;
+    min-width: 140px;
   }
 
   &:hover {

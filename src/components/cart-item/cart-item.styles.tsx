@@ -12,6 +12,7 @@ export const CartItemContainer = styled.div`
 
   img {
     width: 30%;
+    height: auto;
   }
 `;
 
