@@ -1,0 +1,34 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+body {
+    margin: 0;
+    padding: 20px 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  @media (orientation: portrait) {
+    .logo {
+      width: 70px;
+      height: auto;
+      margin-left: -30px;
+      margin-top: -20px;
+    }
+  }  
+`
